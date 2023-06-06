@@ -1,5 +1,6 @@
+#!/usr/bin/env python3
 from sqlalchemy import create_engine, func
-from sqlalchemy import ForeignKey, Table, Column, Integer, String, Float, DateTime
+from sqlalchemy import ForeignKey, Table, Column, Integer, String, Float, ARRAY,  DateTime
 from sqlalchemy.orm import relationship, backref
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -10,8 +11,8 @@ Base = declarative_base()
 city_driver = Table(
     'city_drivers',
     Base.metadata,
-    Column('city_id', ForeignKey('city.id'), primary_key=True),
-    Column('driver_id', ForeignKey('driver.id'), primary_key=True),
+    Column('city_id', ForeignKey('cities.id'), primary_key=True),
+    Column('driver_id', ForeignKey('drivers.id'), primary_key=True),
     extend_existing=True,
 )
 
@@ -57,7 +58,7 @@ class Trip(Base):
     driver_id = Column(Integer(), ForeignKey('drivers.id'))
     destinations = Column(String())
     created_at = Column(DateTime(), server_default=func.now())
-    updated_at = Column(DateTime(), onupdate=func.now())
+    updated_at = Column(DateTime(), onupdate=func.now(), nullable=True)
 
 
     def __repr__(self):
@@ -68,6 +69,9 @@ class Trip(Base):
             f'updated_at={self.updated_at}, ' + \
             f'city_id={self.city_id})'
 
+
+
+    
 
 
             
