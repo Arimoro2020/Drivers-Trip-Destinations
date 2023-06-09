@@ -4,7 +4,7 @@ from sqlalchemy import ForeignKey, Table, Column, Integer, String, Float, ARRAY,
 from sqlalchemy.orm import relationship, backref
 from sqlalchemy.ext.declarative import declarative_base
 
-engine = create_engine('sqlite:///trip.db')
+engine = create_engine("sqlite:///trip.db")
 
 Base = declarative_base()
 
