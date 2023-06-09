@@ -56,3 +56,4 @@ for i in range(50)]
 session.add_all(trips)
 
 session.commit()
+session.close()
