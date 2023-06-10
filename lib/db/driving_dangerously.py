@@ -23,6 +23,7 @@ session = Session()
               help=' The datetime the unsafe driving was sighted')
     
 def driving_dangerously(city, date_time):
+    """Simple program that finds possible culprits for reported unsafe driving."""
 
     date_time = datetime.strptime(date_time, "%Y-%m-%d %H:%M:%S")
 
