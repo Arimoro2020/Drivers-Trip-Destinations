@@ -24,7 +24,9 @@ def cli():
     pass
 @click.command()
 def closing_session():
+    """Simple program that closes the session."""
     session.close()
+    click.echo('session closed...')
 
 cli.add_command(find_driver)
 cli.add_command(find_driver_by_name)
@@ -44,4 +46,5 @@ if __name__ == '__main__':
     years_to_retirement()
     driving_dangerously()
     trip_counts()
+    closing_session()
     
