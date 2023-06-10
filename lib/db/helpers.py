@@ -23,7 +23,7 @@ session = Session()
 def find_driver(id):
     """Simple program that finds a drivers record by means of the id."""
     result = session.query(Driver).filter(Driver.id == int(id)).first()
-    print(f"""
+    click.echo(f"""
 
           id: {result.id},
           name: {result.name},
@@ -40,7 +40,7 @@ def find_driver_by_name(name):
     results = session.query(Driver).filter(Driver.name.like(f'%{name}%')).limit(5)
     
     for result in results:
-        print(f"""
+        click.echo(f"""
 
           id: {result.id},
           name: {result.name},
@@ -71,12 +71,12 @@ def years_to_retirement(age):
 
 # Print the results
 
-    print(f""" Count is: {len(results)}
+    click.echo(f""" Count is: {len(results)}
           There are {len(results)} drivers that will turn {age} in a year or less.
           """)
     
     for result in results:
-        print(f"""
+        click.echo(f"""
           id: {result.id},
           name: {result.name},
           date_of_birth: {result.date_of_birth}
@@ -104,7 +104,7 @@ def driving_dangerously(city, date_time):
     
         
     for result in results:
-        print(f""" 
+        click.echo(f""" 
               driver_id: {result.driver_id}, destinations: {result.destinations}"""     
         )
 
@@ -147,6 +147,6 @@ def trip_counts(date_time):
     ).group_by(included_trips.c.driver_id).order_by(func.count(included_trips.c.id).desc()).limit(10).all()
 
     for result in trip_query:
-        print(f"driver_id: {result.driver_id}, trip_count: {result.trip_count}")
+        click.echo(f"driver_id: {result.driver_id}, trip_count: {result.trip_count}")
 
     
