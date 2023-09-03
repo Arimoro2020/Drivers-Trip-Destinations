@@ -31,7 +31,8 @@
 
 
 
-# models.py:
+# models.py:  Inheritance from Base, a declarative_base object, allows us to avoid rewriting code, and three related (associated) tables.
+
 
 
 
