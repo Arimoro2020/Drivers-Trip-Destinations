@@ -3,8 +3,7 @@
 
 # App Description:
 
-CLI app for performing complex queries by means of on seeded SQLite database build SQLAlcemy ORM by means of function calls in Python, with database tables having many to many relationships.
-
+ A helpful CLI app for performing complex queries on a database that allows non-technical users to complete many of the same tasks from the Python shell without very much training at all.
 
 
 
@@ -26,7 +25,7 @@ CLI app for performing complex queries by means of on seeded SQLite database bui
 
 
 
-# cli.py: an interactive script run with python cli.py, containing several import statements, an if __name__ == "__main__" block, and several function calls inside of that block kept in helpers.py.
+# cli.py: an interactive script run with python cli.py, containing several import statements, an if __name__ == "__main__" block and several function calls inside of that block kept in helpers.py.
 
 
 
