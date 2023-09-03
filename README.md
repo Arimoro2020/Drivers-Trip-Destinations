@@ -3,7 +3,7 @@
 
 # App Description:
 
-CLI app for performing complex queries by means of on seeded SQLite database build SQLAlcemy ORM by means of function calls in python, with database tables having many to many relationships.
+CLI app for performing complex queries by means of on seeded SQLite database build SQLAlcemy ORM by means of function calls in Python, with database tables having many to many relationships.
 
 
 
@@ -16,7 +16,7 @@ CLI app for performing complex queries by means of on seeded SQLite database bui
 
 
 
-# Entity Realationship Diagram (ERD) for Database Tables & Schemas 
+# Entity Relationship Diagram (ERD) for Database Tables and schemas 
 
 
 <img width="1102" alt="ERD" src="https://github.com/Arimoro2020/Drivers-Trip-Destinations-CLI-App/assets/73043768/15f3f381-98bd-4eb7-b93d-3bc9575e05ed">
@@ -41,22 +41,23 @@ CLI app for performing complex queries by means of on seeded SQLite database bui
 
 
   
-  # -find_driver.py:
+  # -find_driver.py: Simple program that finds a driver's record using the id.
 
 
-  # -find_driver_by_name.py:
+  # -find_driver_by_name.py: Simple program that finds a driver's record using the name.
 
 
-  # -years_to_retirement.py:
+  # -years_to_retirement.py: This simple program gets the drivers who will turn a certain age in a year or less.
 
 
-  # -driving_dangerously.py:
+  # -driving_dangerously.py: Simple program that finds possible culprits for reported unsafe driving.
 
 
-  # -trip_counts.py:
+  # -trip_counts.py: Simple program that gets the 10 highest trip counts for drivers from a given date.
+
 
 # Probable New Features to Consider:
-Features to help in determining best routes for a trip to certain cities, and to determine distance between 2 cities and for performing CRUD operations 
+Features to help in determining the best routes for a trip to certain cities, to determine the distance between 2 cities, and for performing CRUD operations. 
 
 
 
