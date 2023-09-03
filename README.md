@@ -26,7 +26,7 @@ CLI app for performing complex queries by means of on seeded SQLite database bui
 
 
 
-# cli.py: an interactive script run with python cli.py, containing a number of import statements, an if __name__ == "__main__" block, and a number of function calls inside of that block kept in helpers.py.![image](https://github.com/Arimoro2020/Drivers-Trip-Destinations-CLI-App/assets/73043768/fbcd7229-c161-4b70-b25a-66a6816ae594)
+# cli.py: an interactive script run with python cli.py, containing several import statements, an if __name__ == "__main__" block, and several function calls inside of that block kept in helpers.py.
 
 
 
